@@ -10,7 +10,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { WhatsAppIcon } from "./icons";
 
 const navLinks = [{ href: "#catalogo", label: "Catálogo" }];
-const logoSrc = "/brand/logo-media-naranja.png";
+const logoSrc = "/brand/logo-media-naranja.jpg";
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
