@@ -14,19 +14,19 @@ type Product = {
 };
 
 const products: Product[] = [
-  { id: "blooming-love", name: "Blooming Love", description: "Ramo en tonos rosados con acabado elegante." },
-  { id: "bouquet-little-special", name: "Bouquet Little Special", description: "Detalle floral delicado para ocasiones especiales." },
-  { id: "bouquete-deluxe-15-anos", name: "Bouquet Deluxe 15 años", description: "Arreglo con toque de lujo para 15 años." },
-  { id: "bouquete-especial-pequeno", name: "Bouquet Especial Pequeño", description: "Versión compacta para un detalle rápido y especial." },
-  { id: "bouquete-glamour", name: "Bouquet Glamour", description: "Composición glamorosa con tonos sofisticados." },
-  { id: "diamond-bouquet", name: "Diamond Bouquet", description: "Bouquet luminoso con mezcla de rosas y follaje." },
-  { id: "glow-bouquete", name: "Glow Bouquet", description: "Arreglo con efecto glow y contraste de colores." },
-  { id: "glow-buquet", name: "Glow Buquet", description: "Versión compacta del glow, perfecta para regalo." },
-  { id: "golden-roses", name: "Golden Roses", description: "Rosas en tonos dorados para un gesto impactante." },
-  { id: "gourmet-rose", name: "Gourmet Rose", description: "Caja gourmet con rosas y detalles premium." },
-  { id: "luxury-bouquete", name: "Luxury Bouquet", description: "Arreglo lujoso con acabados exclusivos." },
-  { id: "mini-romance", name: "Mini Romance", description: "Mini bouquet romántico, ideal para sorprender." },
-  { id: "ramillete-express", name: "Ramillete Express", description: "Ramillete rápido y fresco para entrega al momento." },
+  { id: "blooming-love", name: "Blooming Love", description: "Ramo en tonos rosados con acabado elegante.", price: "70.000" },
+  { id: "bouquet-little-special", name: "Bouquet Little Special", description: "Detalle floral delicado para ocasiones especiales.", price: "38.000" },
+  { id: "bouquete-deluxe-15-anos", name: "Bouquet Deluxe 15 años", description: "Arreglo con toque de lujo para 15 años.", price: "70.000" },
+  { id: "bouquete-especial-pequeno", name: "Bouquet Especial Pequeño", description: "Versión compacta para un detalle rápido y especial.", price: "38.000" },
+  { id: "bouquete-glamour", name: "Bouquet Glamour", description: "Composición glamorosa con tonos sofisticados.", price: "38.000" },
+  { id: "diamond-bouquet", name: "Diamond Bouquet", description: "Bouquet luminoso con mezcla de rosas y follaje.", price: "120.000" },
+  { id: "glow-bouquete", name: "Glow Bouquet", description: "Arreglo con efecto glow y contraste de colores.", price: "35.000" },
+  { id: "glow-buquet", name: "Glow Bouquet (compacto)", description: "Versión compacta del glow, perfecta para regalo.", price: "35.000" },
+  { id: "golden-roses", name: "Golden Roses", description: "30 rosas doradas para un gesto impactante.", price: "70.000" },
+  { id: "gourmet-rose", name: "Gourmet Rose", description: "Caja gourmet con rosas y detalles premium.", price: "90.000" },
+  { id: "luxury-bouquete", name: "Luxury Bouquet", description: "Arreglo lujoso con acabados exclusivos.", price: "140.000" },
+  { id: "mini-romance", name: "Mini Romance", description: "Mini bouquet romántico, ideal para sorprender.", price: "25.000" },
+  { id: "ramillete-express", name: "Ramillete Express", description: "Ramillete rápido y fresco para entrega al momento.", price: "25.000" },
 ];
 
 export default function ProductCatalog() {

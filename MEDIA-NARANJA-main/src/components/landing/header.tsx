@@ -10,16 +10,16 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { WhatsAppIcon } from "./icons";
 
 const navLinks = [{ href: "#catalogo", label: "Catálogo" }];
-const logoSrc = "/brand/logo-media-naranja.jpg";
+const logoSrc = "/brand/logo-media-naranja.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/70">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-black/50 text-white backdrop-blur-md supports-[backdrop-filter]:bg-black/50">
       <div className="container flex h-16 max-w-7xl items-center justify-between gap-6">
         <Link href="#" className="flex items-center gap-2" prefetch={false}>
-          <div className="relative h-10 w-32 sm:w-40">
+          <div className="relative h-12 w-44 sm:w-52">
             <Image
               src={logoSrc}
               alt="Media Naranja logo"
@@ -32,7 +32,7 @@ export default function Header() {
           <span className="sr-only">MEDIA NARANJA</span>
         </Link>
         <div className="flex items-center gap-4 flex-1 justify-end">
-          <nav className="hidden md:flex gap-6 text-sm font-medium items-center flex-1 justify-center">
+          <nav className="hidden md:flex gap-6 text-sm font-medium items-center flex-1 justify-end text-white">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href} className="transition-colors hover:text-primary" prefetch={false}>
                 {link.label}
