@@ -1,0 +1,178 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-flowers",
+      "description": "Imagen hero elegante con tulipanes.",
+      "imageUrl": "https://images.unsplash.com/photo-1518701056335-5f9c5737a355?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "tulips field"
+    },
+    {
+      "id": "premium-roses",
+      "description": "Colección de rosas premium.",
+      "imageUrl": "https://images.unsplash.com/photo-1614988005762-53c4df3342d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcmVtaXVtJTIwcm9zZXN8ZW58MHx8fHwxNzY0MjA1MTI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "premium roses"
+    },
+    {
+      "id": "special-collections",
+      "description": "Colecciones especiales de bouquets.",
+      "imageUrl": "https://images.unsplash.com/photo-1595788088802-0e32ff9306f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y291dHVyZSUyMGJvdXF1ZXR8ZW58MHx8fHwxNzY0MjA1MTI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "special bouquet"
+    },
+    {
+      "id": "exotic-flowers",
+      "description": "Selección de flores exóticas.",
+      "imageUrl": "https://images.unsplash.com/photo-1761519609455-b8199f766fd9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZXhvdGljJTIwZmxvd2Vyc3xlbnwwfHx8fDE3NjQyMDUxMjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "exotic flowers"
+    },
+    {
+      "id": "limited-editions",
+      "description": "Arreglos de edición limitada.",
+      "imageUrl": "https://images.unsplash.com/photo-1728227871131-741b54fff32d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsaW1pdGVkJTIwZWRpdGlvbnxlbnwwfHx8fDE3NjQyMDUxMjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "limited edition"
+    },
+    {
+      "id": "catalog-item-1",
+      "description": "Bouquet 'Amor Eterno'.",
+      "imageUrl": "https://images.unsplash.com/photo-1565695951564-007d8f297e48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmbG93ZXIlMjBib3VxdWV0fGVufDB8fHx8MTc2NDA5OTMyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "flower bouquet"
+    },
+    {
+      "id": "catalog-item-2",
+      "description": "Bouquet 'Sueño de Verano'.",
+      "imageUrl": "https://images.unsplash.com/photo-1710587385309-f264b4d503cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3ZWRkaW5nJTIwZmxvd2Vyc3xlbnwwfHx8fDE3NjQxNjQ3NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wedding flowers"
+    },
+    {
+      "id": "catalog-item-3",
+      "description": "Bouquet 'Jardín Secreto'.",
+      "imageUrl": "https://images.unsplash.com/photo-1591966801718-48eb8ba0f8f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmbG9yYWwlMjBhcnJhbmdlbWVudHxlbnwwfHx8fDE3NjQyMDUxMjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "floral arrangement"
+    },
+    {
+      "id": "catalog-item-4",
+      "description": "Bouquet 'Cielo Estrellado'.",
+      "imageUrl": "https://images.unsplash.com/photo-1488928741225-2aaf732c96cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb2xvcmZ1bCUyMGZsb3dlcnN8ZW58MHx8fHwxNzY0MjA1MTI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "colorful flowers"
+    },
+    {
+      "id": "catalog-item-5",
+      "description": "Bouquet 'Nube Blanca'.",
+      "imageUrl": "https://images.unsplash.com/photo-1570112008549-e4181988109f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMHJvc2VzfGVufDB8fHx8MTc2NDIwNTEyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "white roses"
+    },
+    {
+      "id": "catalog-item-6",
+      "description": "Bouquet 'Sonrisa Rosa'.",
+      "imageUrl": "https://images.unsplash.com/photo-1557865560-ef9f22c71898?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaW5rJTIwdHVsaXBzfGVufDB8fHx8MTc2NDIwNTEyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pink tulips"
+    },
+    {
+      "id": "workshop-1",
+      "description": "Foto elegante del taller floral.",
+      "imageUrl": "https://images.unsplash.com/photo-1612541831130-2943431e8681?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmbG93ZXIlMjB3b3Jrc2hvcHxlbnwwfHx8fDE3NjQyMDUxMjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "flower workshop"
+    },
+    {
+      "id": "workshop-2",
+      "description": "Florista trabajando en un arreglo.",
+      "imageUrl": "https://images.unsplash.com/photo-1758524052181-05c3f3d30423?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmbG9yaXN0JTIwd29ya2luZ3xlbnwwfHx8fDE3NjQyMDUxMjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "florist working"
+    },
+    {
+      "id": "avatar-1",
+      "description": "Avatar para testimonio.",
+      "imageUrl": "https://images.unsplash.com/photo-1546961329-78bef0414d7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2NDE3NDExN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "avatar-2",
+      "description": "Avatar para testimonio.",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQxNDEzMzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "avatar-3",
+      "description": "Avatar para testimonio.",
+      "imageUrl": "https://images.unsplash.com/photo-1554727242-741c14fa561c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc2NDEyMzc4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person smiling"
+    },
+    {
+      "id": "blooming-love",
+      "description": "Bouquet Blooming Love.",
+      "imageUrl": "/catalogo/blooming-love.jpeg",
+      "imageHint": "blooming love bouquet"
+    },
+    {
+      "id": "bouquet-little-special",
+      "description": "Bouquet Little Special.",
+      "imageUrl": "/catalogo/bouquet-little-special.jpeg",
+      "imageHint": "pink bouquet"
+    },
+    {
+      "id": "bouquete-deluxe-15-anos",
+      "description": "Bouquete Deluxe 15 años.",
+      "imageUrl": "/catalogo/bouquete-deluxe-15-anos.jpeg",
+      "imageHint": "deluxe bouquet 15 anos"
+    },
+    {
+      "id": "bouquete-especial-pequeno",
+      "description": "Bouquete Especial Pequeño.",
+      "imageUrl": "/catalogo/bouquete-especial-pequeno.jpeg",
+      "imageHint": "small special bouquet"
+    },
+    {
+      "id": "bouquete-glamour",
+      "description": "Bouquete Glamour.",
+      "imageUrl": "/catalogo/bouquete-glamour.jpeg",
+      "imageHint": "glamour bouquet"
+    },
+    {
+      "id": "diamond-bouquet",
+      "description": "Diamond Bouquet.",
+      "imageUrl": "/catalogo/diamond-bouquet.jpeg",
+      "imageHint": "diamond bouquet"
+    },
+    {
+      "id": "glow-bouquete",
+      "description": "Glow Bouquete.",
+      "imageUrl": "/catalogo/glow-bouquete.jpeg",
+      "imageHint": "glow bouquete"
+    },
+    {
+      "id": "glow-buquet",
+      "description": "Glow Buquet.",
+      "imageUrl": "/catalogo/glow-buquet.jpeg",
+      "imageHint": "glow buquet"
+    },
+    {
+      "id": "golden-roses",
+      "description": "Golden Roses.",
+      "imageUrl": "/catalogo/golden-roses.jpeg",
+      "imageHint": "golden roses bouquet"
+    },
+    {
+      "id": "gourmet-rose",
+      "description": "Gourmet Rose.",
+      "imageUrl": "/catalogo/gourmet-rose.jpeg",
+      "imageHint": "gourmet rose bouquet"
+    },
+    {
+      "id": "luxury-bouquete",
+      "description": "Luxury Bouquete.",
+      "imageUrl": "/catalogo/luxury-bouquete.jpeg",
+      "imageHint": "luxury bouquete"
+    },
+    {
+      "id": "mini-romance",
+      "description": "Mini Romance.",
+      "imageUrl": "/catalogo/mini-romance.jpeg",
+      "imageHint": "mini romance bouquet"
+    },
+    {
+      "id": "ramillete-express",
+      "description": "Ramillete Express.",
+      "imageUrl": "/catalogo/ramillete-express.jpeg",
+      "imageHint": "ramillete express bouquet"
+    }
+  ]
+}
