@@ -20,9 +20,9 @@ export default function Hero() {
         priority
         data-ai-hint={heroImage?.imageHint ?? "tulips background"}
       />
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/85 via-black/70 to-black/90" />
-      <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/50 via-primary/25 to-transparent" />
-      <div className="absolute inset-0 z-10 backdrop-blur-[3px]" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/65 via-black/45 to-black/70" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/30 via-primary/15 to-transparent" />
+      <div className="absolute inset-0 z-10 backdrop-blur-[1.5px]" />
 
       <div className="container px-4 md:px-6 text-white relative z-20">
         <div className="flex flex-col items-center space-y-6">
