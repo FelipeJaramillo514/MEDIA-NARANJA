@@ -8,9 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { WhatsAppIcon } from "./icons";
 
-const navLinks = [
-  { href: "#catalogo", label: "Catálogo" },
-];
+const navLinks = [{ href: "#catalogo", label: "Catálogo" }];
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -20,19 +18,12 @@ export default function Header() {
       <div className="container flex h-16 max-w-7xl items-center justify-between">
         <Link href="#" className="flex items-center gap-2" prefetch={false}>
           <Flower2 className="h-6 w-6 text-primary" />
-          <span className="font-headline text-xl font-bold tracking-tighter">
-            MEDIA NARANJA
-          </span>
+          <span className="font-headline text-xl font-bold tracking-tighter">MEDIA NARANJA</span>
         </Link>
         <div className="flex items-center gap-4">
           <nav className="hidden md:flex gap-6 text-sm font-medium items-center">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="transition-colors hover:text-primary"
-                prefetch={false}
-              >
+              <Link key={link.href} href={link.href} className="transition-colors hover:text-primary" prefetch={false}>
                 {link.label}
               </Link>
             ))}

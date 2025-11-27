@@ -7,7 +7,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === "hero-flowers");
-  const fallbackImage = "/catalogo/blooming-love.jpeg";
+  const fallbackImage = "/catalogo/golden-roses.jpeg";
   const heroSrc = heroImage?.imageUrl ?? fallbackImage;
 
   return (
@@ -16,14 +16,14 @@ export default function Hero() {
         src={heroSrc}
         alt={heroImage?.description ?? "Tulipanes en fondo elegante"}
         fill
-        className="object-cover object-center -z-20"
+        className="object-cover object-center z-0"
         priority
         data-ai-hint={heroImage?.imageHint ?? "tulips background"}
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/60 via-black/55 to-black/75" />
-      <div className="absolute inset-0 -z-10 backdrop-blur-[1px]" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/75 via-black/60 to-black/80" />
+      <div className="absolute inset-0 z-10 backdrop-blur-[2px]" />
 
-      <div className="container px-4 md:px-6 text-white">
+      <div className="container px-4 md:px-6 text-white relative z-20">
         <div className="flex flex-col items-center space-y-6">
           <div className="space-y-4">
             <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl drop-shadow-xl">

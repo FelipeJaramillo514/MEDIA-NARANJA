@@ -110,19 +110,19 @@
     },
     {
       "id": "bouquete-deluxe-15-anos",
-      "description": "Bouquete Deluxe 15 años.",
+      "description": "Bouquet Deluxe 15 años.",
       "imageUrl": "/catalogo/bouquete-deluxe-15-anos.jpeg",
       "imageHint": "deluxe bouquet 15 anos"
     },
     {
       "id": "bouquete-especial-pequeno",
-      "description": "Bouquete Especial Pequeño.",
+      "description": "Bouquet Especial Pequeño.",
       "imageUrl": "/catalogo/bouquete-especial-pequeno.jpeg",
       "imageHint": "small special bouquet"
     },
     {
       "id": "bouquete-glamour",
-      "description": "Bouquete Glamour.",
+      "description": "Bouquet Glamour.",
       "imageUrl": "/catalogo/bouquete-glamour.jpeg",
       "imageHint": "glamour bouquet"
     },
@@ -134,7 +134,7 @@
     },
     {
       "id": "glow-bouquete",
-      "description": "Glow Bouquete.",
+      "description": "Glow Bouquet.",
       "imageUrl": "/catalogo/glow-bouquete.jpeg",
       "imageHint": "glow bouquete"
     },
@@ -158,7 +158,7 @@
     },
     {
       "id": "luxury-bouquete",
-      "description": "Luxury Bouquete.",
+      "description": "Luxury Bouquet.",
       "imageUrl": "/catalogo/luxury-bouquete.jpeg",
       "imageHint": "luxury bouquete"
     },

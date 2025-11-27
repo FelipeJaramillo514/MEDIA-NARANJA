@@ -1,10 +1,10 @@
 "use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import Image from "next/image";
+import Link from "next/link";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 type Product = {
   id: string;
@@ -14,19 +14,19 @@ type Product = {
 };
 
 const products: Product[] = [
-  { id: 'blooming-love', name: 'Blooming Love', description: 'Ramo en tonos rosados con acabado elegante.' },
-  { id: 'bouquet-little-special', name: 'Bouquet Little Special', description: 'Detalle floral delicado para ocasiones especiales.' },
-  { id: 'bouquete-deluxe-15-anos', name: 'Bouquete Deluxe 15 años', description: 'Arreglo con toque de lujo para 15 años.' },
-  { id: 'bouquete-especial-pequeno', name: 'Bouquete Especial Pequeño', description: 'Versión compacta para un detalle rápido y especial.' },
-  { id: 'bouquete-glamour', name: 'Bouquete Glamour', description: 'Composición glamorosa con tonos sofisticados.' },
-  { id: 'diamond-bouquet', name: 'Diamond Bouquet', description: 'Bouquet luminoso con mezcla de rosas y follaje.' },
-  { id: 'glow-bouquete', name: 'Glow Bouquete', description: 'Arreglo con efecto glow y contraste de colores.' },
-  { id: 'glow-buquet', name: 'Glow Buquet', description: 'Versión compacta del glow, perfecta para regalo.' },
-  { id: 'golden-roses', name: 'Golden Roses', description: 'Rosas en tonos dorados para un gesto impactante.' },
-  { id: 'gourmet-rose', name: 'Gourmet Rose', description: 'Caja gourmet con rosas y detalles premium.' },
-  { id: 'luxury-bouquete', name: 'Luxury Bouquete', description: 'Arreglo lujoso con acabados exclusivos.' },
-  { id: 'mini-romance', name: 'Mini Romance', description: 'Mini bouquet romántico, ideal para sorprender.' },
-  { id: 'ramillete-express', name: 'Ramillete Express', description: 'Ramillete rápido y fresco para entrega al momento.' },
+  { id: "blooming-love", name: "Blooming Love", description: "Ramo en tonos rosados con acabado elegante." },
+  { id: "bouquet-little-special", name: "Bouquet Little Special", description: "Detalle floral delicado para ocasiones especiales." },
+  { id: "bouquete-deluxe-15-anos", name: "Bouquet Deluxe 15 años", description: "Arreglo con toque de lujo para 15 años." },
+  { id: "bouquete-especial-pequeno", name: "Bouquet Especial Pequeño", description: "Versión compacta para un detalle rápido y especial." },
+  { id: "bouquete-glamour", name: "Bouquet Glamour", description: "Composición glamorosa con tonos sofisticados." },
+  { id: "diamond-bouquet", name: "Diamond Bouquet", description: "Bouquet luminoso con mezcla de rosas y follaje." },
+  { id: "glow-bouquete", name: "Glow Bouquet", description: "Arreglo con efecto glow y contraste de colores." },
+  { id: "glow-buquet", name: "Glow Buquet", description: "Versión compacta del glow, perfecta para regalo." },
+  { id: "golden-roses", name: "Golden Roses", description: "Rosas en tonos dorados para un gesto impactante." },
+  { id: "gourmet-rose", name: "Gourmet Rose", description: "Caja gourmet con rosas y detalles premium." },
+  { id: "luxury-bouquete", name: "Luxury Bouquet", description: "Arreglo lujoso con acabados exclusivos." },
+  { id: "mini-romance", name: "Mini Romance", description: "Mini bouquet romántico, ideal para sorprender." },
+  { id: "ramillete-express", name: "Ramillete Express", description: "Ramillete rápido y fresco para entrega al momento." },
 ];
 
 export default function ProductCatalog() {
@@ -74,7 +74,7 @@ export default function ProductCatalog() {
                       <p className="text-sm font-medium text-muted-foreground">Precio por definir</p>
                     )}
                     <Button asChild variant="outline">
-                      <Link href="#contacto">{product.price ? 'Ordenar' : 'Consultar'}</Link>
+                      <Link href="#contacto">{product.price ? "Ordenar" : "Consultar"}</Link>
                     </Button>
                   </div>
                 </CardHeader>

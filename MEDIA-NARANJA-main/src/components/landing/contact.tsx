@@ -1,9 +1,9 @@
 "use client";
 
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Mail, Phone, MapPin } from 'lucide-react';
-import { WhatsAppIcon, InstagramIcon } from './icons';
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { WhatsAppIcon, InstagramIcon } from "./icons";
 
 export default function Contact() {
   return (
@@ -27,7 +27,7 @@ export default function Contact() {
                   <Phone className="h-5 w-5 text-primary" /> 318 378 5679
                 </p>
                 <p className="flex items-center gap-2">
-                  <InstagramIcon className="h-5 w-5 text-primary" />{' '}
+                  <InstagramIcon className="h-5 w-5 text-primary" />{" "}
                   <Link href="#" className="hover:text-primary">
                     @medianaranja_tuquerres
                   </Link>
