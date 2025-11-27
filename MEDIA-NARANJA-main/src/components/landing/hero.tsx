@@ -11,7 +11,7 @@ export default function Hero() {
   const heroSrc = heroImage?.imageUrl ?? fallbackImage;
 
   return (
-    <section className="relative min-h-[80vh] w-full flex items-center justify-center text-center overflow-hidden">
+    <section className="relative min-h-[90vh] w-full flex items-center justify-center text-center overflow-hidden">
       <Image
         src={heroSrc}
         alt={heroImage?.description ?? "Tulipanes en fondo elegante"}
@@ -20,13 +20,13 @@ export default function Hero() {
         priority
         data-ai-hint={heroImage?.imageHint ?? "tulips background"}
       />
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/75 via-black/60 to-black/80" />
-      <div className="absolute inset-0 z-10 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/85 via-black/70 to-black/90" />
+      <div className="absolute inset-0 z-10 backdrop-blur-[3px]" />
 
       <div className="container px-4 md:px-6 text-white relative z-20">
         <div className="flex flex-col items-center space-y-6">
           <div className="space-y-4">
-            <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl drop-shadow-xl">
+            <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl drop-shadow-[0_6px_24px_rgba(0,0,0,0.65)]">
               Floristería Boutique
             </h1>
             <p className="mx-auto max-w-[700px] text-lg md:text-xl font-body drop-shadow-md text-white/90">
