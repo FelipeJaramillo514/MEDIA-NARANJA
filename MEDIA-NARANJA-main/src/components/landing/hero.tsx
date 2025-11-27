@@ -20,18 +20,18 @@ export default function Hero() {
         priority
         data-ai-hint={heroImage?.imageHint ?? "tulips background"}
       />
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/65 via-black/45 to-black/70" />
-      <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/30 via-primary/15 to-transparent" />
-      <div className="absolute inset-0 z-10 backdrop-blur-[1.5px]" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/55 via-black/45 to-black/60" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/20 via-primary/15 to-transparent" />
+      <div className="absolute inset-0 z-10 backdrop-blur-[1px]" />
 
       <div className="container px-4 md:px-6 text-white relative z-20">
         <div className="flex flex-col items-center space-y-6">
-          <div className="space-y-4">
+          <div className="space-y-3">
             <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl drop-shadow-[0_6px_24px_rgba(0,0,0,0.65)]">
-              Floristería Boutique
+              MEDIA NARANJA
             </h1>
             <p className="mx-auto max-w-[700px] text-lg md:text-xl font-body drop-shadow-md text-white/85">
-              Arte floral para momentos únicos. Arreglos hechos a mano con flores premium.
+              Floristería Boutique · Arreglos hechos a mano con flores premium.
             </p>
           </div>
           <Button

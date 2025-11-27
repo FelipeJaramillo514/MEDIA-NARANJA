@@ -9,23 +9,23 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { WhatsAppIcon } from "./icons";
 
-const navLinks = [{ href: "#catalogo", label: "Cat?logo" }];
+const navLinks = [{ href: "#catalogo", label: "Catálogo" }];
 const logoSrc = "/brand/logo-media-naranja.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-black/30 bg-black/70 text-white backdrop-blur-lg supports-[backdrop-filter]:bg-black/70 shadow-[0_8px_24px_rgba(0,0,0,0.35)]">
+    <header className="sticky top-0 z-50 w-full bg-black/80 text-white backdrop-blur-xl border-b border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.45)]">
       <div className="container flex h-16 max-w-7xl items-center justify-between gap-6">
         <Link href="#" className="flex items-center gap-3" prefetch={false}>
-          <div className="relative h-14 w-52 sm:h-16 sm:w-60">
+          <div className="relative h-16 w-64 sm:h-20 sm:w-80">
             <Image
               src={logoSrc}
               alt="Media Naranja logo"
               fill
               className="object-contain"
-              sizes="(max-width: 640px) 200px, 240px"
+              sizes="(max-width: 640px) 220px, 320px"
               priority
             />
           </div>
@@ -46,7 +46,7 @@ export default function Header() {
           >
             <Link href="https://wa.me/573183785679" target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon className="h-5 w-5" />
-              ?Haz tu pedido!
+              ¡Haz tu pedido!
             </Link>
           </Button>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -58,8 +58,8 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="left">
               <Link href="#" className="mr-6 flex items-center" prefetch={false}>
-                <div className="relative h-10 w-44">
-                  <Image src={logoSrc} alt="Media Naranja logo" fill className="object-contain" sizes="176px" priority />
+                <div className="relative h-12 w-56">
+                  <Image src={logoSrc} alt="Media Naranja logo" fill className="object-contain" sizes="224px" priority />
                 </div>
               </Link>
               <div className="grid gap-2 py-6">
@@ -81,7 +81,7 @@ export default function Header() {
                 >
                   <Link href="https://wa.me/573183785679" target="_blank" rel="noopener noreferrer">
                     <WhatsAppIcon className="h-7 w-7" />
-                    ?Haz tu pedido!
+                    ¡Haz tu pedido!
                   </Link>
                 </Button>
               </div>
