@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, Flower2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -9,6 +10,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { WhatsAppIcon } from "./icons";
 
 const navLinks = [{ href: "#catalogo", label: "Catálogo" }];
+const logoSrc = "/brand/logo-media-naranja.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -16,9 +18,18 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-7xl items-center justify-between">
-        <Link href="#" className="flex items-center gap-2" prefetch={false}>
-          <Flower2 className="h-6 w-6 text-primary" />
-          <span className="font-headline text-xl font-bold tracking-tighter">MEDIA NARANJA</span>
+        <Link href="#" className="flex items-center gap-3" prefetch={false}>
+          <div className="relative h-10 w-36">
+            <Image
+              src={logoSrc}
+              alt="Media Naranja logo"
+              fill
+              className="object-contain"
+              sizes="144px"
+              priority
+            />
+          </div>
+          <span className="sr-only">MEDIA NARANJA</span>
         </Link>
         <div className="flex items-center gap-4">
           <nav className="hidden md:flex gap-6 text-sm font-medium items-center">
@@ -47,8 +58,9 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="left">
               <Link href="#" className="mr-6 flex items-center" prefetch={false}>
-                <Flower2 className="h-6 w-6 text-primary" />
-                <span className="ml-2 font-headline text-lg font-bold">MEDIA NARANJA</span>
+                <div className="relative h-8 w-32">
+                  <Image src={logoSrc} alt="Media Naranja logo" fill className="object-contain" sizes="128px" priority />
+                </div>
               </Link>
               <div className="grid gap-2 py-6">
                 {navLinks.map((link) => (
