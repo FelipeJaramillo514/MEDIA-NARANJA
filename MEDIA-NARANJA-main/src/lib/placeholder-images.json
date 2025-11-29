@@ -98,19 +98,19 @@
     },
     {
       "id": "blooming-love",
-      "description": "Bouquet Blooming Love.",
+      "description": "Ramo elegante de 24 rosas y cinta personalizada.",
       "imageUrl": "/catalogo/blooming-love.jpeg",
       "imageHint": "blooming love bouquet"
     },
     {
       "id": "bouquet-little-special",
-      "description": "Bouquet Little Special.",
+      "description": "Detalle floral delicado: combinación de 12 rosas, claveles y un lirio.",
       "imageUrl": "/catalogo/bouquet-little-special.jpeg",
       "imageHint": "pink bouquet"
     },
     {
       "id": "bouquete-deluxe-15-anos",
-      "description": "Bouquet Deluxe 15 años.",
+      "description": "Combinación de 20 rosas, claveles, mini corona y cinta personalizada.",
       "imageUrl": "/catalogo/bouquete-deluxe-15-anos.jpeg",
       "imageHint": "deluxe bouquet 15 anos"
     },
@@ -128,25 +128,25 @@
     },
     {
       "id": "diamond-bouquet",
-      "description": "Diamond Bouquet.",
+      "description": "Bouquet luminoso con 24 rosas y algunos lirios.",
       "imageUrl": "/catalogo/diamond-bouquet.jpeg",
       "imageHint": "diamond bouquet"
     },
     {
       "id": "glow-bouquete",
-      "description": "Glow Bouquet.",
+      "description": "Arreglo con efecto glow de 16 rosas.",
       "imageUrl": "/catalogo/glow-bouquete.jpeg",
       "imageHint": "glow bouquete"
     },
     {
       "id": "glow-buquet",
-      "description": "Glow Buquet.",
+      "description": "Versión compacta del Glow con 16 rosas.",
       "imageUrl": "/catalogo/glow-buquet.jpeg",
       "imageHint": "glow buquet"
     },
     {
       "id": "golden-roses",
-      "description": "Golden Roses.",
+      "description": "30 rosas para un gesto impactante.",
       "imageUrl": "/catalogo/golden-roses.jpeg",
       "imageHint": "golden roses bouquet"
     },
@@ -158,7 +158,7 @@
     },
     {
       "id": "luxury-bouquete",
-      "description": "Luxury Bouquet.",
+      "description": "Arreglo lujoso con 24 rosas, corona premium y cinta personalizada.",
       "imageUrl": "/catalogo/luxury-bouquete.jpeg",
       "imageHint": "luxury bouquete"
     },

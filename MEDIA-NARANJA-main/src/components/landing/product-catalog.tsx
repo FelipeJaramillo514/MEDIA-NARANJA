@@ -14,17 +14,17 @@ type Product = {
 };
 
 const products: Product[] = [
-  { id: "blooming-love", name: "Blooming Love", description: "Ramo en tonos rosados con acabado elegante.", price: "70.000" },
-  { id: "bouquet-little-special", name: "Bouquet Little Special", description: "Detalle floral delicado para ocasiones especiales.", price: "38.000" },
-  { id: "bouquete-deluxe-15-anos", name: "Bouquet Deluxe 15 años", description: "Arreglo con toque de lujo para 15 años.", price: "70.000" },
+  { id: "blooming-love", name: "Blooming Love", description: "Ramo elegante de 24 rosas y cinta personalizada.", price: "70.000" },
+  { id: "bouquet-little-special", name: "Bouquet Little Special", description: "Detalle floral delicado: combinación de 12 rosas, claveles y un lirio.", price: "38.000" },
+  { id: "bouquete-deluxe-15-anos", name: "Bouquet Deluxe 15 años", description: "Combinación de 20 rosas, claveles, mini corona y cinta personalizada.", price: "70.000" },
   { id: "bouquete-especial-pequeno", name: "Bouquet Especial Pequeño", description: "Versión compacta para un detalle rápido y especial.", price: "38.000" },
   { id: "bouquete-glamour", name: "Bouquet Glamour", description: "Composición glamorosa con tonos sofisticados.", price: "38.000" },
-  { id: "diamond-bouquet", name: "Diamond Bouquet", description: "Bouquet luminoso con mezcla de rosas y follaje.", price: "120.000" },
-  { id: "glow-bouquete", name: "Glow Bouquet", description: "Arreglo con efecto glow y contraste de colores.", price: "35.000" },
-  { id: "glow-buquet", name: "Glow Bouquet (compacto)", description: "Versión compacta del glow, perfecta para regalo.", price: "35.000" },
-  { id: "golden-roses", name: "Golden Roses", description: "30 rosas doradas para un gesto impactante.", price: "70.000" },
+  { id: "diamond-bouquet", name: "Diamond Bouquet", description: "Bouquet luminoso con 24 rosas y algunos lirios.", price: "120.000" },
+  { id: "glow-bouquete", name: "Glow Bouquet", description: "Arreglo con efecto glow de 16 rosas.", price: "35.000" },
+  { id: "glow-buquet", name: "Glow Bouquet (compacto)", description: "Versión compacta del Glow con 16 rosas.", price: "35.000" },
+  { id: "golden-roses", name: "Golden Roses", description: "30 rosas para un gesto impactante.", price: "70.000" },
   { id: "gourmet-rose", name: "Gourmet Rose", description: "Caja gourmet con rosas y detalles premium.", price: "90.000" },
-  { id: "luxury-bouquete", name: "Luxury Bouquet", description: "Arreglo lujoso con acabados exclusivos.", price: "140.000" },
+  { id: "luxury-bouquete", name: "Luxury Bouquet", description: "Arreglo lujoso con 24 rosas, corona premium y cinta personalizada.", price: "140.000" },
   { id: "mini-romance", name: "Mini Romance", description: "Mini bouquet romántico, ideal para sorprender.", price: "25.000" },
   { id: "ramillete-express", name: "Ramillete Express", description: "Ramillete rápido y fresco para entrega al momento.", price: "25.000" },
 ];
