@@ -8,6 +8,8 @@ export type Answers = {
 export type ProductInfo = {
   id: string;
   name: string;
+  description?: string;
+  imageUrl?: string;
   price: number; // COP
   section: "catalogo" | "nuevos";
 };
@@ -133,3 +135,18 @@ export function waLinkFor(p: ProductInfo): string {
 }
 
 export { PRODUCTS, byId };
+
+// Enriquecimiento opcional desde fuentes de imágenes/datos
+import { PlaceHolderImages } from "./placeholder-images";
+import { NewProductsData } from "./new-products";
+
+export function enrichProduct(p: ProductInfo): ProductInfo {
+  if (p.section === "catalogo") {
+    const img = PlaceHolderImages.find((i) => i.id === p.id);
+    if (img) return { ...p, description: img.description, imageUrl: img.imageUrl };
+  } else {
+    const np = NewProductsData.find((n) => n.id === p.id);
+    if (np) return { ...p, description: np.description, imageUrl: np.imageUrl };
+  }
+  return p;
+}

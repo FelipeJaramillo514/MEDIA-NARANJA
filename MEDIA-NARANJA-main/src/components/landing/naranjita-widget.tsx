@@ -5,14 +5,17 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { MessageCircle, Send } from "lucide-react";
-import { Answers, recommendProducts, buildReason, formatCOP, waLinkFor } from "@/lib/recommendation";
+import { Answers, recommendProducts, buildReason, formatCOP, waLinkFor, enrichProduct, byId } from "@/lib/recommendation";
+import ChatProductCard from "@/components/landing/chat-product-card";
 
-type ChatMsg = { role: "assistant" | "user"; content: string };
+type ChatMsg =
+  | { role: "assistant" | "user"; kind: "text"; content: string }
+  | { role: "assistant"; kind: "product"; productId: string };
 
 type Step = "occasion" | "recipient" | "style" | "budget" | "done";
 
 const initialGreeting =
-  "Hola, soy Naranjita, tu asistente floral. ¿Me cuentas para qué ocasión buscas un arreglo? Puedo ayudarte a elegir la opción perfecta.";
+  "No sabes qué elegir? ¡Naranjita con gusto te ayudará!\n\nHola, soy Naranjita, tu asistente floral. ¿Me cuentas para qué ocasión buscas un arreglo? Puedo ayudarte a elegir la opción perfecta.";
 
 function detectBudgetNumber(text: string): number | undefined {
   // Captura números tipo 35.000, 70000, 120,000
@@ -49,7 +52,7 @@ function assistantPromptFor(step: Step): string {
 
 export default function NaranjitaWidget() {
   const [open, setOpen] = useState(false);
-  const [messages, setMessages] = useState<ChatMsg[]>([{ role: "assistant", content: initialGreeting }]);
+  const [messages, setMessages] = useState<ChatMsg[]>([{ role: "assistant", kind: "text", content: initialGreeting }]);
   const [input, setInput] = useState("");
   const [answers, setAnswers] = useState<Answers>({});
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -61,11 +64,11 @@ export default function NaranjitaWidget() {
   }, [messages, open]);
 
   function handleAssistant(text: string) {
-    setMessages((m) => [...m, { role: "assistant", content: text }]);
+    setMessages((m) => [...m, { role: "assistant", kind: "text", content: text }]);
   }
 
   function handleUser(text: string) {
-    setMessages((m) => [...m, { role: "user", content: text }]);
+    setMessages((m) => [...m, { role: "user", kind: "text", content: text }]);
   }
 
   function processUserInput(text: string) {
@@ -94,7 +97,7 @@ export default function NaranjitaWidget() {
         );
         return;
       }
-      const top = recs[0];
+      const top = enrichProduct(recs[0]);
       const others = recs.slice(1);
       const reason = buildReason(top, next);
       const link = waLinkFor(top);
@@ -105,6 +108,9 @@ export default function NaranjitaWidget() {
         `[Ordenar por WhatsApp](${link})`,
       ];
       handleAssistant(lines.join("\n\n"));
+
+      // Mostrar tarjeta del producto con foto/descripcion/precio/botones
+      setMessages((m) => [...m, { role: "assistant", kind: "product", productId: top.id }]);
 
       if (others.length) {
         const alt = others
@@ -134,7 +140,7 @@ export default function NaranjitaWidget() {
     <>
       <div className="fixed bottom-4 right-4 z-50">
         <Button onClick={() => setOpen(true)} className="shadow-lg" variant="default">
-          <MessageCircle className="mr-2 h-5 w-5" /> Habla con Naranjita
+          <MessageCircle className="mr-2 h-5 w-5" /> No sabes qué elegir? Naranjita te ayuda
         </Button>
       </div>
 
@@ -145,18 +151,30 @@ export default function NaranjitaWidget() {
             <p className="text-sm text-muted-foreground">Asesora floral amable y experta</p>
           </SheetHeader>
           <div ref={scrollRef} className="flex-1 overflow-y-auto p-4 space-y-3 bg-background">
-            {messages.map((m, idx) => (
-              <div
-                key={idx}
-                className={
-                  m.role === "assistant"
-                    ? "max-w-[85%] bg-card text-foreground border rounded-2xl px-3 py-2"
-                    : "ml-auto max-w-[85%] bg-primary text-primary-foreground rounded-2xl px-3 py-2"
-                }
-              >
-                <div className="whitespace-pre-wrap text-sm leading-relaxed">{m.content}</div>
-              </div>
-            ))}
+            {messages.map((m, idx) => {
+              if (m.kind === "text") {
+                return (
+                  <div
+                    key={idx}
+                    className={
+                      m.role === "assistant"
+                        ? "max-w-[85%] bg-card text-foreground border rounded-2xl px-3 py-2"
+                        : "ml-auto max-w-[85%] bg-primary text-primary-foreground rounded-2xl px-3 py-2"
+                    }
+                  >
+                    <div className="whitespace-pre-wrap text-sm leading-relaxed">{m.content}</div>
+                  </div>
+                );
+              }
+              // kind === 'product'
+              const base = byId.get(m.productId);
+              if (!base) return null;
+              return (
+                <div key={idx} className="max-w-[85%]">
+                  <ChatProductCard product={enrichProduct(base)} />
+                </div>
+              );
+            })}
           </div>
           <div className="p-3 border-t flex gap-2">
             <Input
